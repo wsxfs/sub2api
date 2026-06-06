@@ -16,7 +16,7 @@ English | [中文](README_CN.md) | [日本語](README_JA.md)
 
 </div>
 
-> **Note**: This repository is my personal maintenance fork of Sub2API. The Docker deployment instructions below now use this fork's deployment script and the `wsxfs/sub2api:latest` image.
+> **Note**: This repository is my personal maintenance fork of Sub2API. The Docker deployment instructions below now use this fork's deployment script and the `CouplingArtist/sub2api:latest` image.
 
 > **Sub2API officially uses only the domains `sub2api.org` and `pincc.ai`. Other websites using the Sub2API name may be third-party deployments or services and are not affiliated with this project. Please verify and exercise your own judgment.**
 
@@ -182,7 +182,7 @@ One-click installation script that downloads pre-built binaries from GitHub Rele
 #### Installation Steps
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/wsxfs/sub2api/main/deploy/install.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/CouplingArtist/sub2api/main/deploy/install.sh | sudo bash
 ```
 
 The script will:
@@ -232,7 +232,7 @@ sudo journalctl -u sub2api -f
 sudo systemctl restart sub2api
 
 # Uninstall
-curl -sSL https://raw.githubusercontent.com/wsxfs/sub2api/main/deploy/install.sh | sudo bash -s -- uninstall -y
+curl -sSL https://raw.githubusercontent.com/CouplingArtist/sub2api/main/deploy/install.sh | sudo bash -s -- uninstall -y
 ```
 
 ---
@@ -255,7 +255,7 @@ Use the automated deployment script for easy setup:
 mkdir -p sub2api-deploy && cd sub2api-deploy
 
 # Download and run deployment preparation script
-curl -sSL https://raw.githubusercontent.com/wsxfs/sub2api/main/deploy/docker-deploy.sh | bash
+curl -sSL https://raw.githubusercontent.com/CouplingArtist/sub2api/main/deploy/docker-deploy.sh | bash
 
 # Start services
 docker compose up -d
@@ -277,7 +277,7 @@ If you prefer manual setup:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/wsxfs/sub2api.git
+git clone https://github.com/CouplingArtist/sub2api.git
 cd sub2api/deploy
 
 # 2. Copy environment configuration
